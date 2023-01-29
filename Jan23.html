@@ -4,22 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jan23</title>
+    <title>Hello Git!</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>👩‍💻SheCodes is a Coding Workshop for Women</h1>
+    <div class="container">
+      <form action="">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="search"
+              placeholder="Enter a city.."
+              class="form-control search-input"
+            />
+          </div>
+          <div class="col-3 p-0">
+            <input type="submit" class="btn btn-primary w-100" value="Search" />
+          </div>
+        </div>
+      </form>
 
-    <h2>Access a new career in Tech</h2>
+      <div class="row">
+        <div class="col-6">
+          <h1>San Francisco</h1>
+          <ul>
+            <li>
+              <span> "Sunday" "15" ":" "05" </span>
+              ", " "broken clouds"
+            </li>
+            <li>
+              "Humidity: "
+              <strong> "78" "%" </strong>
+              ", wind:"
+              <strong> "10.73" "km/h" </strong>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-8">
+          <div class="temperature-container d-flex justify-content-end">
+            <canvas width="52" height="52"></canvas>
+            <div>
+              <span class="temperature">8</span><span class="unit">°C</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <p>
-      SheCodes teaches coding, design and management skills to women
-      <br />
-      <strong>Only 25 spots available!</strong>
-    </p>
+      <div class="WeatherForecast row">
+        <div class="col">
+          <div class="WeatherForecastPreview">
+            <div class="forecast-time">Sun</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">9°</span>
+              <span class="forecast-temperature-min">6°</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="WeatherForecastPreview">
+            <div class="forecast-time">Mon</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">9°</span
+              ><span class="forecast-temperature-min">4°</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="WeatherForecastPreview">
+            <div class="forecast-time">Tue</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">10°</span
+              ><span class="forecast-temperature-min">5°</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="WeatherForecastPreview">
+            <div class="forecast-time">Wed</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">11°</span
+              ><span class="forecast-temperature-min">6°</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="WeatherForecastPreview">
+            <div class="forecast-time">Thu</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">12°</span
+              ><span class="forecast-temperature-min">9°</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <button>Join now</button>
-    <footer></footer>
-    <script src="src/app.js"></script>
+      <footer></footer>
+      <script src="src/app.js"></script>
+    </div>
   </body>
 </html>
