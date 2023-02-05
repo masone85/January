@@ -29,7 +29,7 @@ function search(event) {
   let apiKey = "af8a02404a8co87d6b9be4abdat1baf3";
   let query = document.querySelector("#city-input");
 
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${apiKey}&units=metric`;
   console.log(apiUrl);
 
   // let cityElement = document.querySelector("#city");
