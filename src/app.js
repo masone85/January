@@ -25,9 +25,16 @@ function formatDate(date) {
 
 function search(event) {
   event.preventDefault();
-  let cityElement = document.querySelector("#city");
-  let cityInput = document.querySelector("#city-input");
-  cityElement.innerHTML = cityInput.value;
+
+  let apiKey = "af8a02404a8co87d6b9be4abdat1baf3";
+  let query = document.querySelector("#city-input");
+
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${apiKey}`;
+  console.log(apiUrl);
+
+  // let cityElement = document.querySelector("#city");
+  // let cityInput = document.querySelector("#city-input");
+  // cityElement.innerHTML = cityInput.value;
 }
 
 function convertToFahrenheit(event) {

@@ -1,5 +1,6 @@
 body {
   font-family: arial, sans-serif;
+  background: #ffe8cf;
 }
 
 h1 {
@@ -25,11 +26,12 @@ li {
 }
 
 .weather-app {
-  border: 1px solid #dadde1;
+  border: 1px solid gray;
   padding: 15px;
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
+  background: #fdfdc4;
 }
 
 .weather-icon {
@@ -52,4 +54,14 @@ li {
 
 .search-form {
   margin-bottom: 20px;
+}
+
+.btn {
+  background: #ffdede;
+  border: #7c7c7c;
+  color: #ccffec;
+}
+
+.span {
+  color: #ffdede;
 }
