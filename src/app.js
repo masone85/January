@@ -26,7 +26,7 @@ function formatDate(date) {
 function search(event) {
   event.preventDefault();
   let apiKey = "af8a02404a8co87d6b9be4abdat1baf3";
-  let city = "Paris";
+  let city = document.querySelector("#search-input").value;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   console.log(apiUrl);
 
