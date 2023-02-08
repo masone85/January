@@ -25,11 +25,9 @@ function formatDate(date) {
 
 function search(event) {
   event.preventDefault();
-
   let apiKey = "af8a02404a8co87d6b9be4abdat1baf3";
-  let query = document.querySelector("#city-input");
-
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${apiKey}&units=metric`;
+  let city = "Paris";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   console.log(apiUrl);
 
   // let cityElement = document.querySelector("#city");
