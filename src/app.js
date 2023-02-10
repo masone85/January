@@ -25,14 +25,19 @@ function formatDate(date) {
 
 function search(event) {
   event.preventDefault();
-  let apiKey = "af8a02404a8co87d6b9be4abdat1baf3";
-  let city = document.querySelector("#search-input").value;
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  //let apiKey = "af8a02404a8co87d6b9be4abdat1baf3";
+  let apiUrl =
+    "https://api.shecodes.io/weather/v1/current?query=Bollington&key=af8a02404a8co87d6b9be4abdat1baf3";
   console.log(apiUrl);
 
-  // let cityElement = document.querySelector("#city");
-  // let cityInput = document.querySelector("#city-input");
-  // cityElement.innerHTML = cityInput.value;
+  let cityElement = document.querySelector("#city");
+  let cityInput = document.querySelector("#city-input");
+  cityElement.innerHTML = cityInput.value;
+}
+
+function displayDescription(response) {
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.condition.description;
 }
 
 function convertToFahrenheit(event) {
